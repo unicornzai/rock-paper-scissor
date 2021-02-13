@@ -1,31 +1,15 @@
+## Overview
 
-> Open this page at [https://unicornzai.github.io/rock-paper-scissor/](https://unicornzai.github.io/rock-paper-scissor/)
+A hide and seek game using two micro:bits.   One micro:bit is hidden, the other is given to a team who use the proximity sensor to find the other micro:bit.  As you get closer the finding the other micro:bit, more leds will light up indicating your closeness.
 
-## Use as Extension
+This is developed utilising the micro:bit radio strength function, which acts as a proximity sensor.
 
-This repository can be added as an **extension** in MakeCode.
+## Requirements:
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/unicornzai/rock-paper-scissor** and import
+*  2 x micro:bit
 
-## Edit this project ![Build status badge](https://github.com/unicornzai/rock-paper-scissor/workflows/MakeCode/badge.svg)
+## Usage:
 
-To edit this repository in MakeCode.
+On the beacon micro:bit (i.e the one you are hiding).   Press Button A to start the beacon, which will emit periodic radio signals.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/unicornzai/rock-paper-scissor** and click import
-
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/unicornzai/rock-paper-scissor/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (used for search, rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+On the second micro:bit, you just have to reset it.  It will automatically start listening and will light up when it receives a radio signal.
